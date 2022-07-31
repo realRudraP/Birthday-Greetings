@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         body {
+                background-image: linear-gradient(90deg, #34eb77, #51a1d6);
+                font-family: 'Caveat', cursive;
+            };
+        h1 {
+            text-align: center;
+            
+        };
+        #link{
+            width: 95%;
+        }
+        img{
+            width: 95%;
+            height: 1%;
+        }
+        
+        
+    </style>
+    <title>Generate a Birthday card on your own!</title>
+</head>
+<body>
+    <h1 class="center">Generate a birthday card!</h1>
+    <br>
+    <br>
+    <h2>Select the name of the recipient</h2>
+    <button id="name" onclick="collectname()">Choose</button>
+    <i id="namecheck" class="fa-solid fa-check" style="display: none;"></i>
+    <hr>
+    <h2>Select name of the sender</h2>
+    <button id="sndr" onclick="setsender()">Choose</button>
+    <i id="sndrcheck" class="fa-solid fa-check" style="display: none;"></i>
+    <br>
+    <hr>
+    <h2>Select the image of the cake</h2>
+    <img src="/cakes/default.jpg" alt="Default Cake" onclick="defcake()">
+    <i id="cakecheck" class="fa-solid fa-check" style="display: none;"></i>
+    <p id="link">https://happybirthdaycard.netlify.app/?<span id="namenter"></span>=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span></p>
+</body>
+<script>
+    function collectname() {
+        let name = prompt("Enter the name of the recipient");
+        document.getElementById("namenter").innerHTML = name;   
+        document.getElementById("namecheck").style.display = "block";
+        }
+    function setsender() {
+        let sender = prompt("Enter the name of the sender");
+        document.getElementById("senderenter").innerHTML = sender; 
+        document.getElementById("sndrcheck").style.display = "block";  
+        }
+    function defcake() {
+        document.getElementById("cakevar").innerHTML= "/cakes/default.jpg"
+        document.getElementById("cakecheck").style.display = "block";
+        }
+
+</script>
+</html>
