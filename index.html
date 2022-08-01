@@ -47,7 +47,7 @@ img{
 
     <body onload="getstuff()">
 
-        <audio src="default.mp3" id="hbdsong"></audio>
+        <audio  src="default.mp3" id="hbdsong"></audio>
         <h1 class="centre">🎉Happy Birthday <span id="name"></span>🎉 </h2>
         <h3 class="centre" id="message"></h3>
         <h3 class="centre">Click anywhere on the screen to start a birthday song!</h3>
@@ -83,6 +83,7 @@ img{
                 document.getElementById("name").innerHTML= name;
                 document.getElementById("sender").innerHTML= pair[2];
                 document.getElementById("cakeimg").src= pair[4];
+                document.getElementById("hbdsong").src= pair[6];
                 
             }  
         
