@@ -51,6 +51,7 @@ img{
         <h1 class="centre">🎉Happy Birthday <span id="name"></span>🎉 </h2>
         <h3 class="centre" id="message"></h3>
         <h3 class="centre">Click anywhere on the screen to start a birthday song!</h3>
+        <h3 class="centre" id="wishes"></h3>
         <h4 class="centre">Birthday wishes and cake from <span id="sender"></span></h4>
 
         <img src="/cakes/default.jpg" alt="A wonderful cake for you!" id="cakeimg">
@@ -82,6 +83,7 @@ img{
                 document.getElementById("name").innerHTML= name;
                 document.getElementById("sender").innerHTML= pair[2];
                 document.getElementById("cakeimg").src= pair[4];
+                document.getElementByID("wishes").innerHTML= pair[6];
             }  
         
         }
