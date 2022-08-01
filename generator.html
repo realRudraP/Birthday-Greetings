@@ -56,11 +56,14 @@
     <button onclick="getcustomlink()">Enter</button>
 
     <hr>
-    <h2>Enter Birthday Wishes (optional)</h2>
-    <button onclick="getwishes()">Enter Wishes</button>
+    <h2>Select a birthday song!</h2>
+    <audio src="/default.mp3" controls></audio>
+    <button onclick="defsong()">Default song</button>
+    <br><br><br>
+    <button onclick="customsong()">Add custom mp3 link</button>
 
     <hr>
-    <p id="link">https://happybirthdaycard.netlify.app/?<span id="namenter"></span>=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span>=;wishes=<span id="wishes"></span></p>
+    <p id="link">https://happybirthdaycard.netlify.app/?<span id="namenter"></span>=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span>=;song=<span id="song"></span></p>
 </body>
 <script>
     function collectname() {
@@ -90,10 +93,14 @@
         let link= prompt("Enter the link of the image");
         document.getElementById("cakevar").innerHTML= link;
     }
-    function getwishes(){
-        let wishes= prompt("Enter the wishes for the recipient");
-        document.getElementById("wishes").innerHTML= wishes;
-    }
+    function defsong() {
+        document.getElementById("song").innerHTML= "/default.mp3"
+        }
+    function customsong() {
+        let song= prompt("Enter the link of the song");
+        document.getElementById("song").innerHTML= song;
+        }
+  
 
 </script>
 </html>
