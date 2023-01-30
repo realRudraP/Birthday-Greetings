@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: happybirthdaycard.netlify.app
+Token: dcff027a58944a4b030826c6768e9c64d3db7ad6136bd272617bbcd966fcc15d
