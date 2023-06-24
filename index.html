@@ -38,7 +38,15 @@
         .dmca-badge{
             width: 20;
         }
-        
+        .share{
+           
+            height: 25px;
+            width: 20px;
+        }
+        #telegram{
+            padding-left: 200px;
+        margin-left: 200px;
+        }
     </style>
     <title>Generate a Birthday card on your own!</title>
 
@@ -91,20 +99,28 @@
     <br><br>    
     <img src="/cakes/strawberry.jpg" alt="Strawberry Cake" onclick="stawberrycake()">
     <br><br>
-    <h4>Enter a custom photo link!</h4>
-    <button onclick="getcustomlink()">Enter</button>
-
-    <hr>
-   
-    <hr>
-    <p id="link">https://happybirthdaycard.netlify.app/wishes.html?<span id="namenter"></span>=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span>=;song=<span id="song"></span></p>
     
+    <hr>
+   <h2  onclick="setsocials()">Share on your socials!</h2>
+   <div id="hidden" style="display: none;">
+   <a href="" id="tele-share"><div id="Telegram" style="margin-left: 20px;">
+    <img src="/resources/tele.png" class="share" alt="Telegram Share Button">
+  </div></a>    </div>
+    <hr>
+    <p id="link">https://happybirthdaycard.netlify.app/wishes.html?<span id="namenter"></span>=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span>=;</p>
+    <br><br><br><br><br>
+    <div class="credits">An open source project made by <a href="https://github.com/Rudra15-droid">Rudra</a> :)</div>
 </body>
 <script>
+    let teleshare= document.getElementById("tele-share")
+    let link_to_share= document.getElementById("link").innerText
+    let socmenu= document.getElementById('hidden')
+    
     function collectname() {
         let name = prompt("Enter the name of the recipient");
         document.getElementById("namenter").innerHTML = name;   
         document.getElementById("namecheck").style.display = "block";
+        
         }
     function setsender() {
         let sender = prompt("Enter the name of the sender");
@@ -124,9 +140,9 @@
         document.getElementById("cakevar").innerHTML= "/cakes/strawberry.jpeg"
         document.getElementById("cakecheck").style.display = "block";
         }
-    function getcustomlink(){
-        let link= prompt("Enter the link of the image");
-        document.getElementById("cakevar").innerHTML= link;
+    function setsocials(){
+        socmenu.style.display= "block";
+        teleshare.href= link_to_share
     }
   
   
