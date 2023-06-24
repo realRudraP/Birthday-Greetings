@@ -90,14 +90,15 @@
     <br>
     <hr>
     <h2>Select the image of the cake</h2>
-    <img src="/cakes/default.jpg" alt="Default Cake" onclick="defcake()">
+    <i id="cakecheck" class="fa-solid fa-check" style="display: none;"></i>
+    <img src="/cakes/default.jpg" alt="Default Cake" id="defcake" onclick="defcake()">
     <p>Default cake</p>
     
     <br><br>
-    <img src="/cakes/chocolate.jpg" alt="Chocolate Cake" onclick="choccake()">
-    <i id="cakecheck" class="fa-solid fa-check" style="display: none;"></i>
+    <img src="/cakes/chocolate.jpg" id="choccake" alt="Chocolate Cake" onclick="choccake()">
+    
     <br><br>    
-    <img src="/cakes/strawberry.jpg" alt="Strawberry Cake" onclick="stawberrycake()">
+    <img src="/cakes/strawberry.jpg" id="strawcake" alt="Strawberry Cake" onclick="stawberrycake()">
     <br><br>
     
     <hr>
@@ -130,15 +131,24 @@
     function defcake() {
         document.getElementById("cakevar").innerHTML= "/cakes/default.jpg"
         document.getElementById("cakecheck").style.display = "block";
+        document.getElementById("choccake").style.filter= "blur(10px)"
+        document.getElementById("strawcake").style.filter= "blur(10px)"
+        document.getElementById('defcake').style.filter= "blur(0px)"
         
         }
     function choccake() {
         document.getElementById("cakevar").innerHTML= "/cakes/chocolate.jpg"
         document.getElementById("cakecheck").style.display = "block";
+        document.getElementById("choccake").style.filter= "blur(0px)"
+        document.getElementById("strawcake").style.filter= "blur(10px)"
+        document.getElementById('defcake').style.filter= "blur(10px)"
         }
     function stawberrycake() {
         document.getElementById("cakevar").innerHTML= "/cakes/strawberry.jpeg"
         document.getElementById("cakecheck").style.display = "block";
+        document.getElementById("choccake").style.filter= "blur(10px)"
+        document.getElementById("strawcake").style.filter= "blur(0px)"
+        document.getElementById('defcake').style.filter= "blur(10px)"
         }
     function setsocials(){
         socmenu.style.display= "block";
