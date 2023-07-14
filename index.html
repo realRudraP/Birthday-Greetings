@@ -1,161 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MXG4B2M');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Start Bootstrap Linking-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-    <!-- End Bootstrap Linking-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-         body {
-                background-image: linear-gradient(90deg, #34eb77, #51a1d6);
-                font-family: 'Caveat', cursive;
-            };
-        h1 {
-            text-align: center;
-            
-        };
-        #link{
-            width: 95%;
-        }
-        img{
-            width: 85%;
-            height: 1%;
-        }
-        .dmca-badge{
-            width: 20;
-        }
-        .share{
-           
-            height: 25px;
-            width: 20px;
-        }
-        #telegram{
-            padding-left: 200px;
+      body {
+        background-image: linear-gradient(90deg, #34eb77, #51a1d6);
+        font-family: "Caveat", cursive;
+      }
+      h1 {
+        text-align: center;
+      }
+      #link {
+        width: 95%;
+      }
+      img {
+        width: 85%;
+        height: 1%;
+      }
+      .dmca-badge {
+        width: 20;
+      }
+      .share {
+        height: 25px;
+        width: 20px;
+      }
+      #telegram {
+        padding-left: 200px;
         margin-left: 200px;
-        }
+      }
     </style>
     <title>Generate a Birthday card on your own!</title>
-
-    <!--Google Global Site tag start-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDRYTC6680"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EDRYTC6680');
-</script>
-<!--Google Global Site tag end-->
-
-    <!--Microsoft Clarity Tracking Code start-->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "d0sgwa71hs");
-    </script>
-    <!--Microsoft Clarity Tracking Code end-->
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXG4B2M"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  </head>
+  <body>
     <h1 class="center">Generate a birthday card!</h1>
-    <br>
-    <br>
+    <br />
+    <br />
     <h2>Select the name of the recipient</h2>
     <button id="name" onclick="collectname()">Choose</button>
-    <i id="namecheck" class="fa-solid fa-check" style="display: none;"></i>
-    <hr>
+    <i id="namecheck" class="fa-solid fa-check" style="display: none"></i>
+    <hr />
     <h2>Select name of the sender</h2>
     <button id="sndr" onclick="setsender()">Choose</button>
-    <i id="sndrcheck" class="fa-solid fa-check" style="display: none;"></i>
-    <br>
-    <hr>
+    <i id="sndrcheck" class="fa-solid fa-check" style="display: none"></i>
+    <br />
+    <hr />
     <h2>Select the image of the cake</h2>
-    <i id="cakecheck" class="fa-solid fa-check" style="display: none;"></i>
-    <img src="/cakes/default.jpg" alt="Default Cake" id="defcake" onclick="defcake()">
+    <i id="cakecheck" class="fa-solid fa-check" style="display: none"></i>
+    <img
+      src="/cakes/default.jpg"
+      alt="Default Cake"
+      id="defcake"
+      onclick="defcake()"
+    />
     <p>Default cake</p>
-    
-    <br><br>
-    <img src="/cakes/chocolate.jpg" id="choccake" alt="Chocolate Cake" onclick="choccake()">
-    
-    <br><br>    
-    <img src="/cakes/strawberry.jpg" id="strawcake" alt="Strawberry Cake" onclick="stawberrycake()">
-    <br><br>
-    
-    <hr>
-   <h2  onclick="setsocials()">Share on your socials!</h2>
-   <div id="hidden" style="display: none;">
-   <a href="" id="tele-share"><div id="Telegram" style="margin-left: 20px;">
-    <img src="/resources/tele.png" class="share" alt="Telegram Share Button">
-  </div></a>    </div>
-    <hr>
-    <p id="link">https://happybirthdaycard.netlify.app/wishes.html?<span id="namenter"></span>=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span>=;</p>
-    <br><br><br><br><br>
-    <div class="credits">An open source project made by <a href="https://github.com/Rudra15-droid">Rudra</a> :)</div>
-</body>
-<script>
-    let teleshare= document.getElementById("tele-share")
-    let link_to_share= document.getElementById("link").innerText
-    let socmenu= document.getElementById('hidden')
-    
-    function collectname() {
-        let name = prompt("Enter the name of the recipient");
-        document.getElementById("namenter").innerHTML = name;   
-        document.getElementById("namecheck").style.display = "block";
-        
-        }
-    function setsender() {
-        let sender = prompt("Enter the name of the sender");
-        document.getElementById("senderenter").innerHTML = sender; 
-        document.getElementById("sndrcheck").style.display = "block";  
-        }
-    function defcake() {
-        document.getElementById("cakevar").innerHTML= "/cakes/default.jpg"
-        document.getElementById("cakecheck").style.display = "block";
-        document.getElementById("choccake").style.filter= "blur(10px)"
-        document.getElementById("strawcake").style.filter= "blur(10px)"
-        document.getElementById('defcake').style.filter= "blur(0px)"
-        
-        }
-    function choccake() {
-        document.getElementById("cakevar").innerHTML= "/cakes/chocolate.jpg"
-        document.getElementById("cakecheck").style.display = "block";
-        document.getElementById("choccake").style.filter= "blur(0px)"
-        document.getElementById("strawcake").style.filter= "blur(10px)"
-        document.getElementById('defcake').style.filter= "blur(10px)"
-        }
-    function stawberrycake() {
-        document.getElementById("cakevar").innerHTML= "/cakes/strawberry.jpg"
-        document.getElementById("cakecheck").style.display = "block";
-        document.getElementById("choccake").style.filter= "blur(10px)"
-        document.getElementById("strawcake").style.filter= "blur(0px)"
-        document.getElementById('defcake').style.filter= "blur(10px)"
-        }
-    function setsocials(){
-        socmenu.style.display= "block";
-        teleshare.href= link_to_share
-    }
-  
-  
 
-</script>
+    <br /><br />
+    <img
+      src="/cakes/chocolate.jpg"
+      id="choccake"
+      alt="Chocolate Cake"
+      onclick="choccake()"
+    />
+
+    <br /><br />
+    <img
+      src="/cakes/strawberry.jpg"
+      id="strawcake"
+      alt="Strawberry Cake"
+      onclick="stawberrycake()"
+    />
+    <br /><br />
+
+    <hr />
+    <h2 onclick="setsocials()">Share on your socials!</h2>
+    <div id="hidden" style="display: none">
+      <a href="" id="tele-share"
+        ><div id="Telegram" style="margin-left: 20px">
+          <img
+            src="/resources/tele.png"
+            class="share"
+            alt="Telegram Share Button"
+          /></div
+      ></a>
+    </div>
+    <hr />
+    <p id="link">
+      https://happybirthdaycard.netlify.app/wishes.html?<span
+        id="namenter"
+      ></span
+      >=;sender=<span id="senderenter"></span>=;cake=<span id="cakevar"></span
+      >=;
+    </p>
+    <br /><br /><br /><br /><br />
+    <div class="credits">
+      An open source project made by
+      <a href="https://github.com/Rudra15-droid">Rudra</a> :)
+    </div>
+  </body>
+  <script>
+    let teleshare = document.getElementById("tele-share");
+    let link_to_share = document.getElementById("link").innerText;
+    let socmenu = document.getElementById("hidden");
+
+    function collectname() {
+      let name = prompt("Enter the name of the recipient");
+      document.getElementById("namenter").innerHTML = name;
+      document.getElementById("namecheck").style.display = "block";
+    }
+    function setsender() {
+      let sender = prompt("Enter the name of the sender");
+      document.getElementById("senderenter").innerHTML = sender;
+      document.getElementById("sndrcheck").style.display = "block";
+    }
+    function defcake() {
+      document.getElementById("cakevar").innerHTML = "/cakes/default.jpg";
+      document.getElementById("cakecheck").style.display = "block";
+      document.getElementById("choccake").style.filter = "blur(10px)";
+      document.getElementById("strawcake").style.filter = "blur(10px)";
+      document.getElementById("defcake").style.filter = "blur(0px)";
+    }
+    function choccake() {
+      document.getElementById("cakevar").innerHTML = "/cakes/chocolate.jpg";
+      document.getElementById("cakecheck").style.display = "block";
+      document.getElementById("choccake").style.filter = "blur(0px)";
+      document.getElementById("strawcake").style.filter = "blur(10px)";
+      document.getElementById("defcake").style.filter = "blur(10px)";
+    }
+    function stawberrycake() {
+      document.getElementById("cakevar").innerHTML = "/cakes/strawberry.jpg";
+      document.getElementById("cakecheck").style.display = "block";
+      document.getElementById("choccake").style.filter = "blur(10px)";
+      document.getElementById("strawcake").style.filter = "blur(0px)";
+      document.getElementById("defcake").style.filter = "blur(10px)";
+    }
+    function setsocials() {
+      socmenu.style.display = "block";
+      teleshare.href = link_to_share;
+    }
+  </script>
 </html>
